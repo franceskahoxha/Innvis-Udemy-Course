@@ -1,0 +1,1 @@
+import "./CategoryItem.scss";
