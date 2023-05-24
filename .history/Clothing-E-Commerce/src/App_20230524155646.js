@@ -1,0 +1,24 @@
+import Homepage from "./routes/Homepage/Homepage";
+import { Routes, Route } from "react-router-dom";
+import Navigation from "./routes/Navigation/Navigation";
+import SignIn from "./routes/SignIn/SignIn";
+function App() {
+  const Shop = () => {
+    return (
+      <div>
+        <div>I am a shop</div>
+      </div>
+    );
+  };
+  return (
+    <Routes>
+      <Route path="/" element={<Navigation />}>
+        <Route index element={<Homepage />} />
+        <Route path="shop" element={<Shop />} />
+        <Route path="sign-in" element={<SignIn />} />
+      </Route>
+    </Routes>
+  );
+}
+
+export default App;
