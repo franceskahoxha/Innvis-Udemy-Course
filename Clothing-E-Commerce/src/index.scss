@@ -1,3 +1,9 @@
+* {
+  //so padding and borders dont throw off the dimensions of the component we have defined
+  //adjustign padding or borders without affecting the overall layout or breaking out of container boundaries.
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
   font-family: "Open Sans Condeset", sans-serif;
@@ -8,4 +14,9 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+a {
+  text-decoration: none;
+  color: black;
 }
